@@ -17,6 +17,9 @@ builder.Services.AddEntityFrameworkSqlServer()
     );
 
 builder.Services.AddScoped <IUsersRepositorio, UsersRepositorio>();
+builder.Services.AddScoped<IUsuariosRepositorio, UsuariosRepositorio>();
+builder.Services.AddScoped<IAnimaisRepositorio, AnimaisRepositorio>();
+builder.Services.AddScoped<IObservacoesRepositorio, ObservacoesRepositorio>();
 
 builder.Services.AddCors(options =>
 {
