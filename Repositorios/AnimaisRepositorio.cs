@@ -40,17 +40,17 @@ namespace Api.Repositorios
             }
             else
             {
-                animais.AnimalNome = animais.AnimalNome;
-                animais.AnimalRaca = animais.AnimalRaca;
-                animais.AnimalTipo = animais.AnimalTipo;
-                animais.AnimalCor = animais.AnimalCor;
-                animais.AnimalSexo = animais.AnimalSexo;
-                animais.AnimalObservacao = animais.AnimalObservacao;
-                animais.AnimalFoto = animais.AnimalFoto;
-                animais.AnimalDtDesaparecimento = animais.AnimalDtDesaparecimento;
-                animais.AnimalDtEncontro = animais.AnimalDtEncontro;
-                animais.AnimalStatus = animais.AnimalStatus;
-                animais.UsuarioId = animais.UsuarioId;
+                animais.AnimalNome = animal.AnimalNome;
+                animais.AnimalRaca = animal.AnimalRaca;
+                animais.AnimalTipo = animal.AnimalTipo;
+                animais.AnimalCor = animal.AnimalCor;
+                animais.AnimalSexo = animal.AnimalSexo;
+                animais.AnimalObservacao = animal.AnimalObservacao;
+                animais.AnimalFoto = animal.AnimalFoto;
+                animais.AnimalDtDesaparecimento = animal.AnimalDtDesaparecimento;
+                animais.AnimalDtEncontro = animal.AnimalDtEncontro;
+                animais.AnimalStatus = animal.AnimalStatus;
+                animais.UsuarioId = animal.UsuarioId;
                 _dbContext.Animais.Update(animais);
                 await _dbContext.SaveChangesAsync();
             }
